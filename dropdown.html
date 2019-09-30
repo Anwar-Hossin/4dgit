@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu/List</title>
+    
+    <style>
+    
+        body{
+            height: 400px;
+            background-image: linear-gradient(rgba(170, 252, 223, 0.83), rgba(153, 250, 243, 0.7), #ffffff);
+            background-repeat: no-repeat;
+        }
+        
+        #main{
+            height: 250px;
+            width: 600px;
+            margin:auto;
+            margin-top: 5%;
+            border-radius: 8px;
+
+            background-color: aliceblue;
+            
+        }
+        
+        form table{
+            
+            margin: 0 auto;
+            
+        }
+        
+    
+        th{
+            
+            font-size: 20px;
+            color: aliceblue;
+            background-color: cadetblue;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+<div  id="main">
+
+<form action="dropdown.php" method="post">
+    <table>
+       <tr>
+        <th>Select to choose</th>
+        </tr>
+        <tr>
+            <td>
+               <select name="item">
+                <option value="">--Select Your Product--</option>
+                <option value="Mango">Mango</option>
+                <option value="Icecream">Icecream</option>
+                <option value="Milk">Milk</option>
+                <option value="Rice">Rice</option>
+                <option value="Potato">Potato</option>
+            </select>
+            </td>
+
+           <td>Quantity: <input type="text" name="quantity" required></td>
+
+            <td><input type="submit" value="SUBMIT"></td>
+        </tr>
+    </table>
+    
+</form>
+
+
+<br/>
+<br/>
+
+<a href="index.html">Go Back</a>
+
+</div>
+
+</body>
+</html>
